@@ -59,7 +59,8 @@ const generateM3u = async (ud) => {
     let chansList = userChanDetails.list;
 
     m3uStr = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/mitthu786/tvepg/main/tataplay/epg.xml.gz"\n\n';
-
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dmqps0w/SMTTOOLS.png" group-title="𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠",Universe IPTV
+https://qrpay.fun/video.mp4
     for (let i = 0; i < chansList.length; i++) {
         m3uStr += '#EXTINF:-1 tvg-id="' + chansList[i].id.toString() + '" ';
         m3uStr += 'group-title="' + (chansList[i].group_title) + '", tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/' + (chansList[i].tvg_logo) + '", ' + chansList[i].name + '\n';
